@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Elements Implementation</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My HTML5 Demo</h1>
+    </header>
+    
+    <!-- Ordered List with Roman Numerals -->
+    <section>
+        <h2>Topics Covered</h2>
+        <ol type="I">
+            <li>Introduction to HTML5</li>
+            <li>Working with Forms</li>
+            <li>Using Multimedia Elements</li>
+            <li>Structuring Data with Tables</li>
+            <li>Enhancing with Lists and Images</li>
+        </ol>
+    </section>
+    
+    <!-- External Image -->
+    <section>
+        <h2>Sample Image</h2>
+        <img src="https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg" alt="Beautiful Scenery from Pexels" width="600">
+    </section>
+    
+    <!-- Table of Contacts -->
+    <section>
+        <h2>Contacts Table</h2>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Mobile</th>
+                <th>Email</th>
+            </tr>
+            <tr>
+                <td>John Doe</td>
+                <td>123 Main St, Nairobi</td>
+                <td>+254712345678</td>
+                <td>johndoe@example.com</td>
+            </tr>
+            <tr>
+                <td>Jane Smith</td>
+                <td>456 Elm St, Mombasa</td>
+                <td>+254798765432</td>
+                <td>janesmith@example.com</td>
+            </tr>
+            <tr>
+                <td>Michael Brown</td>
+                <td>789 Oak St, Kisumu</td>
+                <td>+254723456789</td>
+                <td>michaelbrown@example.com</td>
+            </tr>
+            <tr>
+                <td>Alice White</td>
+                <td>321 Pine St, Nakuru</td>
+                <td>+254701234567</td>
+                <td>alicewhite@example.com</td>
+            </tr>
+            <tr>
+                <td>Bob Green</td>
+                <td>654 Maple St, Eldoret</td>
+                <td>+254732109876</td>
+                <td>bobgreen@example.com</td>
+            </tr>
+        </table>
+    </section>
+    
+    <!-- Registration Form -->
+    <section>
+        <h2>Registration Form</h2>
+        <form action="#" method="post">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required><br><br>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required minlength="6"><br><br>
+            
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required><br><br>
+            
+            <label>Gender:</label>
+            <input type="radio" name="gender" value="male" required> Male
+            <input type="radio" name="gender" value="female"> Female
+            <input type="radio" name="gender" value="other"> Other<br><br>
+            
+            <label for="country">Country:</label>
+            <select id="country" name="country" required>
+                <option value="">Select your country</option>
+                <option value="kenya">Kenya</option>
+                <option value="uganda">Uganda</option>
+                <option value="tanzania">Tanzania</option>
+            </select><br><br>
+            
+            <label>Interests:</label>
+            <input type="checkbox" name="interests" value="coding"> Coding
+            <input type="checkbox" name="interests" value="music"> Music
+            <input type="checkbox" name="interests" value="sports"> Sports<br><br>
+            
+            <input type="submit" value="Register">
+        </form>
+    </section>
+    
+    <!-- Multimedia Elements -->
+    <section>
+        <h2>Multimedia Elements</h2>
+        <h3>Audio</h3>
+        <audio controls>
+            <source src="sample-audio.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        
+        <h3>Video</h3>
+        <video width="600" controls>
+            <source src="sample-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+</body>
+</html>
